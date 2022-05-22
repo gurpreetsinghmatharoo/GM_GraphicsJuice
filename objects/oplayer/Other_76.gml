@@ -8,4 +8,6 @@ if (event_data[? "message"] == "player_shoot") {
 	kbY = 1 * kbForce;
 	
 	shakeMag = 5;
+	
+	instance_create_depth(x + 8, y, depth - 100, oPixelParticle);
 }
