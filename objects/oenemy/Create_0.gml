@@ -13,4 +13,11 @@ Hurt = function () {
 	flashAlpha = 1;
 	image_xscale = 0.85;
 	image_yscale = 1.1;
+	kbX = kbForce;
+	kbY = kbForce * -1;
 }
+
+kbX = 0;
+kbY = 0;
+kbDeacc = 0.1;
+kbForce = 1;

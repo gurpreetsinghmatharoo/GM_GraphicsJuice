@@ -3,4 +3,7 @@ if (event_data[? "message"] == "player_shoot") {
 		speed: 6,
 		direction: point_direction(x, y, oEnemy.x, oEnemy.y-13)
 	});
+	
+	kbX = -1 * kbForce;
+	kbY = 1 * kbForce;
 }
