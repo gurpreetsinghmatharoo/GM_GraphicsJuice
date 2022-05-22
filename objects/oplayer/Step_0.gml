@@ -25,3 +25,8 @@ if (kbY != 0) {
 	}
 	y += kbY;
 }
+
+if (shakeMag > 0) {
+	shakeMag -= 1;
+}
+fx_set_parameter(screenshake, "g_Magnitude", shakeMag);

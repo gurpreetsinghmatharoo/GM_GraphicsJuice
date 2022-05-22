@@ -6,4 +6,6 @@ if (event_data[? "message"] == "player_shoot") {
 	
 	kbX = -1 * kbForce;
 	kbY = 1 * kbForce;
+	
+	shakeMag = 5;
 }

@@ -15,6 +15,7 @@ Hurt = function () {
 	image_yscale = 1.1;
 	kbX = kbForce;
 	kbY = kbForce * -1;
+	oPlayer.shakeMag = 2;
 }
 
 kbX = 0;
