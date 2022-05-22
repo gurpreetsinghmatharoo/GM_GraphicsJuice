@@ -1,3 +1,5 @@
+// This object moves in a direction while having its
+// movement being affected by an Animation Curve
 curveChannel = animcurve_get_channel(acFall, 0);
 pos = 0;
 

@@ -1,3 +1,4 @@
+// Shooting while idle
 switch (sprite_index) {
 	case sPlayerIdle:
 		if (mouse_check_button_pressed(mb_left)) {
@@ -7,10 +8,12 @@ switch (sprite_index) {
 	break;
 }
 
+// Restart
 if (keyboard_check_pressed(ord("R"))) {
 	room_restart();
 }
 
+// For knockback
 if (kbX != 0) {
 	kbX -= sign(kbX) * kbDeacc;
 	if (abs(kbX) <= kbDeacc) {
@@ -26,6 +29,7 @@ if (kbY != 0) {
 	y += kbY;
 }
 
+// For screenshake
 if (shakeMag > 0) {
 	shakeMag -= 1;
 }
