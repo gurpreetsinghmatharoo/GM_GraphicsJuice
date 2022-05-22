@@ -1,3 +1,5 @@
-if (place_meeting(x, y, oEnemy)) {
+var _enemy = instance_place(x, y, oEnemy);
+if (_enemy != noone) {
 	instance_destroy();
+	_enemy.flashAlpha = 1;
 }
